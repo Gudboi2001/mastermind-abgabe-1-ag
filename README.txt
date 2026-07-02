@@ -28,3 +28,12 @@ HINWEIS
   Jede Abgabe entspricht einer REST-API-Version. Die API ist abwärtskompatibel,
   daher laufen ältere Clients auch gegen neuere Server.
   node_modules sind nicht enthalten - vor dem Start 'npm install' ausführen.
+
+
+SYSTEMANFORDERUNGEN
+------------------------------------------------------------
+Node.js (Server) : mindestens 18 LTS (wegen structuredClone),
+                   empfohlen 20 oder 22 LTS. Getestet mit Node v22.
+Python (Client)  : mindestens 3.8, empfohlen 3.10+. Getestet mit 3.10.
+                   Abhängigkeit: requests >= 2.28
+                   (pip install -r requirements.txt)
