@@ -1,0 +1,9 @@
+REST API - Referenz (Stand v1.0.0)
+Basis-Pfad: /api/v1   Format: JSON
+
+GET  /health                 -> {status, version, time}
+POST /games                  -> {gameId, codeLength, colors}
+GET  /games/{id}             -> {gameId, attempts, solved, history}
+POST /games/{id}/guesses     Body {guess:[4 Farben]}
+                             -> {gameId, attempts, black, white, solved}
+Fehler: {"error":"..."} mit HTTP 400/404/409

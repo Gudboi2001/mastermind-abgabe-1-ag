@@ -1,0 +1,25 @@
+# ==== Node ====
+node_modules/
+npm-debug.log*
+
+# ==== Laufzeitdaten (werden beim Serverstart automatisch erzeugt) ====
+data/
+server/data/
+
+# ==== Python ====
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ==== Logs ====
+*.log
+
+# ==== Editor / OS ====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ==== Umgebungsvariablen ====
+.env

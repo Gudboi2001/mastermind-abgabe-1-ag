@@ -1,0 +1,13 @@
+MASTERMIND - REST API CHANGELOG
+===============================================
+Fortlaufende Versionierung. Jede Abgabe ergänzt die vorherige und bleibt
+abwährtskompatibel (nur additive Änderungen). Basis-Pfad: /api/v1
+Legende:  +  neuer Endpunkt/Feld     ~  geändert
+===============================================
+
+v1.0.0  - Abgabe A/G  (Arbeitspakete A, G)
+  + GET  /health
+  + POST /games                 -> {gameId, codeLength, colors}
+  + GET  /games/{id}            -> Spielzustand (ohne Lösung)
+  + POST /games/{id}/guesses    Body {guess:[4 Farben]} -> {attempts, black, white, solved}
+        black = Farbe+Position richtig, white = Farbe richtig/Position falsch

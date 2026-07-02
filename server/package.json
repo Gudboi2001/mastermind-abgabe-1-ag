@@ -1,0 +1,17 @@
+{
+  "name": "mastermind-server",
+  "version": "1.0.0",
+  "description": "Mastermind Server/Client Projekt - Arbeitspakete A-I + Z",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "author": "Gruppe (David Gubler, Christian Betschart, Mario Holz, Loris Halbheer)",
+  "license": "MIT"
+}
